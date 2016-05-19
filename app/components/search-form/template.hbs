@@ -1,1 +1,6 @@
-<div class="search">Search goes here</div>
+<div class="search">
+  <form {{action "handleSubmit" on="submit"}}>
+    {{input value=q placeholder="Hoppy, Malt, Angry, New..."}}
+    <input type="submit" value="Search"/>
+  </form>
+</div>
