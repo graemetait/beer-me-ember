@@ -1,1 +1,5 @@
-<div className="results">Results go here</div>
+{{#each beers as |beer|}}
+  {{beer-list-item beer=beer}}
+{{/each}}
+
+{{log beers}}

@@ -1,1 +1,4 @@
-<div className="beer">Beer will go here</div>
+{{#link-to "beer" beer.id beer.name}}
+  <h2>{{beer.name}}</h2>
+  <img src="{{imageURL}}" alt="">
+{{/link-to}}
